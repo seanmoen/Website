@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean Moen's Website</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li class="nav-title">Sean Moen's Website</li>
+        <a href="/about.html"><li class="nav-link">About</li></a>
+        <a href="/projects.html"><li class="nav-link">Projects</li></a>
+    </ul>
+</nav>
+
+<main>
+    <h1>Projects</h1>
+    Here are some projects I have done over the years.
+
+    <section>
+    <h2>Personal</h2>
+
+    <a href="https://seannotseen.com">
+        <h3>seannotseen.com</h3>
+    </a>
+
+    <p>
+        This is the website you are on! Ever since I took my Computer Networks class, I have wanted to create a website.
+        I like the challenge of figuring out the right configurations and I wanted to challenge myself by not using a hosting platform.
+        This website is ran on a Raspberry Pi on my home internet.
+        I use Dynamic DNS to constanly update my current IP as I do not have a static IP.
+        (I hope Google's Dynamic DNS service is still active for a while.)
+        This Raspberry Pi also hosts a Minecraft server.
+        Also, having a computer I can ssh to from anywhere makes me feel cool.
+    </p>
+
+    <p>
+        The <a href="https://seannotseen.com">seannotseen.com</a> name comes from a recurring phenomomenon I experienced growing up.
+        People have always called me "Seen" after seing how my name is spelled.
+        I am used to it now and I figured that would be the best name for a personal website.
+        It also confuses people when I tell them to go to my website.
+        I have discovered that it is hard to casually bring up you have a website in a normal conversation.
+    </p>
+
+    </section>
+    <section>
+    <h2>Hackathons</h2>
+
+    <p>
+        I have competed at various Hackathons over my college career.
+        It is where I have learned to fear the infamous "git merge" command.
+        Take a look at the projects and prizes!
+    </p>
+    <a href="https://devpost.com/software/social-challenge">
+        <h3>Tigerhacks 2023</h3>
+    </a>
+
+    <h4>Project</h4>
+
+    <p>
+        We created a website called Social Duel.
+        The idea was to create challenges that people could complete in the real world to compete for prizes.
+        We created a website to showcase this.
+        We used the Electron framework which allowed our React code to be ran in a website, a native desktop app, and on mobile apps.
+        We used Google Cloud for hosting, Auth0 for user authentication, React for the frontend, Node for the backend, and MongoDB as a databse.
+    </p>
+    
+    <a href="https://github.com/seanmoen/tiger-hacks-2023">
+    <h4>My Contribution</h4>
+    </a>
+        
+    <p>
+        I helped create the frontend and configure our server. This was my first project using React.
+        I created our MongoDB Atllas cluster to save our data and access the backend.
+        In addition, I used my skills with Apache to make our Google Cloud Instance become a web server.
+        In fact, <a href="seannotseen.com">seannotseen.com</a> became our test server for a bit.
+    </p>
+    <h4>Prizes</h4>
+
+    <p>
+        We won the "Best Use of Auth0" prize for our project.
+    </p>
+    <a href="https://devpost.com/software/gas-station-locator">
+    <h3>PickHacks 2023</h3>
+    </a>
+    <h4>Project</h4>
+
+        <p>
+        My team created a Gas Station Locator.
+        This project would send users a SMS message to alert them of the nearest Eco-Friendly Gas Station.
+        We used the Twilio API to send the SMS message and the Google Maps API to gather a list of gas stations.
+        </p>
+
+    <a href="https://github.com/seanmoen/pickhacks2023">
+    <h4>My Contribution</h4>
+    </a>
+    
+    <p>
+        I was in charge of the Google Maps API integration.
+        I used the Python API to receive a JSON with all the nearby gas stations.
+        This list was used to lookup the most EcoFriendly gas station based on the parent company's ESG score.
+        The ESG score describes how environmentally friendly a company is and a higher score is better.
+    </p>
+
+    <h4>Prizes</h4>
+
+    <p>
+        We won the "Most Creative Use of Twilio" prize for our project.
+    </p>
+    </section>
+</main>
+</body>
